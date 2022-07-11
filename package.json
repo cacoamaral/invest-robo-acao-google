@@ -1,0 +1,22 @@
+{
+  "name": "invest-robo-valor-acao-google",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cacoamaral/invest-robo-valor-acao-google.git"
+  },
+  "author": "cacoamaral <cacoamaral@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cacoamaral/invest-robo-valor-acao-google/issues"
+  },
+  "homepage": "https://github.com/cacoamaral/invest-robo-valor-acao-google#readme",
+  "dependencies": {
+    "puppeteer": "^15.3.2"
+  }
+}
