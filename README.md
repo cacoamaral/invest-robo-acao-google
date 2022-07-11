@@ -5,7 +5,7 @@ Biblioteca para retornar o valor atual da ação pela página do google.
 Como utilizar?
 
 ```JS
-const (robo) = required("invest-robo-acao-google")
+const {robo} = require("invest-robo-acao-google")
 ```
 
 - robo(listaNmAcao):

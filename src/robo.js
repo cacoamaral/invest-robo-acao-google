@@ -1,17 +1,18 @@
 const puppeteer = require('puppeteer');
 
-console.log('##### 🤖  Início da análise 🤖 #####');
-console.log('Robô em serviço! 💰');
+async function robo(listaNmAcoes) {
 
-async function robo(listaNnAcoes) {
+  console.log('##### 🤖  Início da análise 🤖 #####');
+  console.log('Robô em serviço! 💰');
+
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
   
   const valores = [];
 
-  for(countAcoes in listaNnAcoes){
+  for(countAcoes in listaNmAcoes){
 
-    const qualquerUrl = `https://www.google.com/search?q=${listaNnAcoes[countAcoes]}&oq=${listaNnAcoes[countAcoes]}&aqs=chrome.0.69i59l2j35i39j0i512l2j69i60l3.2450j1j9&sourceid=chrome&ie=UTF-8`
+    const qualquerUrl = `https://www.google.com/search?q=${listaNmAcoes[countAcoes]}&oq=${listaNmAcoes[countAcoes]}&aqs=chrome.0.69i59l2j35i39j0i512l2j69i60l3.2450j1j9&sourceid=chrome&ie=UTF-8`
    
     await page.goto(qualquerUrl);
 
@@ -22,7 +23,7 @@ async function robo(listaNnAcoes) {
     valores.push(resultado);
   }
 
-  console.log(`Ações analisadas: ${listaNnAcoes}`)
+  console.log(`Ações analisadas: ${listaNmAcoes}`)
   console.log(`Valores capturados: ${valores}`)
   console.log('##### 🤖   Fim da análise   🤖 #####');
 
