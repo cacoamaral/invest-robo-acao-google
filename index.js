@@ -32,7 +32,7 @@ async function robo(listaNmAcoes) {
   return valores;
 }
 
-robo(['TAEE4', 'PETR4']);
+//robo(['TAEE4', 'PETR4']);
 
 module.exports = {
   robo
