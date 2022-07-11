@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/cacoamaral/invest-robo-acao-google#readme",
   "dependencies": {
-    "puppeteer": "^15.3.2"
+    "puppeteer": "^15.3.0"
   }
 }
