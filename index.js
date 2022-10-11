@@ -33,7 +33,7 @@ async function robo(listaNmAcoes) {
   return valores;
 }
 
-//descomentar para testar
+//descomentar para testar e digitar no console 'node index.js'
 //robo(['TAEE4', 'PETR4']);
 
 module.exports = {
