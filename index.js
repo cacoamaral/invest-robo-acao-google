@@ -15,6 +15,7 @@ async function robo(listaNmAcoes) {
     const qualquerUrl = `https://www.google.com/search?q=${listaNmAcoes[countAcoes]}&oq=${listaNmAcoes[countAcoes]}&aqs=chrome.0.69i59l2j35i39j0i512l2j69i60l3.2450j1j9&sourceid=chrome&ie=UTF-8`
    
     await page.goto(qualquerUrl);
+    //await page.screenshot({path: countAcoes+'example.png'});
 
     const resultado = await page.evaluate(() => {
       return document.querySelector('.IsqQVc.NprOob.wT3VGc').textContent;
@@ -32,6 +33,7 @@ async function robo(listaNmAcoes) {
   return valores;
 }
 
+//descomentar para testar
 //robo(['TAEE4', 'PETR4']);
 
 module.exports = {
